@@ -1,0 +1,24 @@
+#menu {
+  margin-top: 20px;
+}
+
+#menu a {
+  background-color: #eee;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+#menu a.active {
+  background-color: green;
+}
+
+#images img {
+  width: 100px;
+  border: 0;
+}
+
+#content {
+  margin-top: 20px;
+}

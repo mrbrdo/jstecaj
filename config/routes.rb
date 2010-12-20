@@ -1,4 +1,9 @@
 Jstecaj::Application.routes.draw do
+  resources :images
+
+  resources :pages
+  
+  match "/login" => "home#login", :via => [:get]
   root :to => 'home#index'
 
   get "home/index"
