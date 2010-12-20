@@ -2,7 +2,7 @@ function getImageList(callback)
 {
   $("#content").stop(true, true).fadeOut();
   $.ajax({
-    url: "http://www.mrbrdo.net:3000/images.json",
+    url: "http://beta.mrbrdo.net/images.json",
     dataType: "jsonp",
     data: {},
     success: function(data) {
@@ -27,7 +27,7 @@ function menuSelect(which)
 function getPageList()
 {
   $.ajax({
-    url: "http://www.mrbrdo.net:3000/pages.json",
+    url: "http://beta.mrbrdo.net/pages.json",
     dataType: "jsonp",
     data: {},
     success: function(data) {
@@ -40,7 +40,7 @@ function getPageList()
           $("#content").stop(true, true).fadeOut();
           menuSelect($(this));
           $.ajax({
-            url: "http://www.mrbrdo.net:3000/pages/"+$(this).attr('data-page-id')+".json",
+            url: "http://beta.mrbrdo.net/pages/"+$(this).attr('data-page-id')+".json",
             dataType: "jsonp",
             data: {},
             success: function(data) {
@@ -70,7 +70,7 @@ function getPageList()
 function login(callback)
 {
   $.ajax({
-    url: "http://www.mrbrdo.net:3000/login.json",
+    url: "http://beta.mrbrdo.net/login.json",
     dataType: "jsonp",
     data: { user: "mrbrdo" },
     success: function(data) {
