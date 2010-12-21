@@ -1,5 +1,5 @@
 var baseUrl = "http://beta.mrbrdo.net/";
-var baseUrl = "http://www.mrbrdo.net:3000/";
+//var baseUrl = "http://www.mrbrdo.net:3000/";
 function getImageList(callback)
 {
   $("#content").stop(true, true).fadeOut();
