@@ -38,5 +38,8 @@ module Jstecaj
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    require File.expand_path('../../lib/semantic_resource', __FILE__)
+    config.middleware.insert_before(Rack::MethodOverride,SemanticResource::RestfulJsonpMiddleware)
   end
 end
